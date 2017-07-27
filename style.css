@@ -66,7 +66,7 @@ button {
 }
 
 .tool {
-  width: 32%;
+  width: 24%;
 }
 
 .toolbox {
@@ -74,7 +74,7 @@ button {
 }
 
 canvas#bs-train {
-  width: 100%;
+  width: 500px;
   padding: 1em 0em 1em 0em;
   /*border: red solid 1px;*/
 }
