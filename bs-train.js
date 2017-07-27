@@ -8,6 +8,9 @@ function reset() {
 }
 
 window.onload = function() {
+  w = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
+  if (w > 500) w = 500;
+  c.style.width = w + "px";
   reset();
 }
 
