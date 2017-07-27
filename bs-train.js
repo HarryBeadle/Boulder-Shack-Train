@@ -11,6 +11,9 @@ window.onload = function() {
   w = (window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
   if (w > 500) w = 500;
   c.style.width = w + "px";
+  c.style.height = w + "px";
+  c.width = w;
+  c.height = w;
   reset();
 }
 
