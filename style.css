@@ -74,7 +74,8 @@ button {
 }
 
 canvas#bs-train {
-  width: 500px;
+  /*width: 500px;*/
+  width: 100%;
   padding: 1em 0em 1em 0em;
   /*border: red solid 1px;*/
 }
