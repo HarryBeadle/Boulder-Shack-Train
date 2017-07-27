@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Boulder Shack Train</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+
+    <div class="header">
+      <img class="boulderb" src="assets/bs-logo.png" alt="Boulder Shack">
+    </div>
+    <div class="content">
+      <div class="toolbox">
+        <button class="tool" type="button" name="button" onclick="mode='start'">Start</button>
+        <button class="tool" type="button" name="button" onclick="mode='hold'">Hold</button>
+        <button class="tool" type="button" name="button" onclick="mode='finish'">Finish</button>
+      </div>
+      <img id="wall-img" style="display: none;" src="assets/wall.png" alt="30degree Wall">
+      <canvas width="500" height="500" id="bs-train"></canvas><br />
+      <span style="display: none;" id="routestring"></span>
+      <script type="text/javascript" src="bs-train.js"></script>
+      <div id="mainmenu" class="menu main">
+        <button type="button" name="button" onclick="change_to_save()">Save</button><br />
+        <button type="button" name="button" onclick="">Load</button>
+      </div>
+      <div id="savemenu" class="menu save white">
+        <input type="text" name="" placeholder="Type Name"><br />
+        <select type="select" name="">
+          <option selected>Select Grade</option>
+          <option>VB</option>
+          <option>V1</option>
+          <option>V2</option>
+          <option>V3</option>
+          <option>V4</option>
+          <option>V5</option>
+          <option>V6</option>
+          <option>V7</option>
+          <option>V?</option>
+        </select><br />
+        <button type="button" name="button" onclick="save()">Save</button>
+      </div>
+      <p class="white">
+        <a href="http://harrybeadle.xyz">Harry Beadle</a> for <a href="http://www.bouldershack.co.uk">Boulder Shack</a>
+      </p>
+    </div>
+  </body>
+</html>

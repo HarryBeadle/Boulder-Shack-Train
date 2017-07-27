@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #3C90CD;
+}
+
+.content {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+}
+
+.white {
+  color:white;
+}
+
+.header {
+  font-size: 32pt;
+  text-align: center;
+  padding: 0.5em;
+  background: white;
+}
+
+.boulderb {
+  width: 100;
+  max-width: 250px;
+  vertical-align: baseline;
+}
+
+.save {
+  display: none;
+}
+
+.menu {
+  text-align: center;
+}
+
+img {
+  margin: 10px 0px 10px 0px;
+}
+
+input, select {
+  background: white;
+  padding: 1em;
+  text-align: left;
+  width: 100%;
+}
+
+button {
+  display: inline-block;
+  width: 100%;
+  background: white;
+  border: none;
+  padding: 1em;
+  margin: 0px;
+}
+
+.tool {
+  width: 32%;
+}
+
+.toolbox {
+  padding-top: 1em;
+}
+
+canvas#bs-train {
+  width: 100%;
+  padding: 1em 0em 1em 0em;
+  /*border: red solid 1px;*/
+}
