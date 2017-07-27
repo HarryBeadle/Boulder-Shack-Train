@@ -38,12 +38,12 @@ function relMouseCoords(event){
 HTMLCanvasElement.prototype.relMouseCoords = relMouseCoords;
 
 c.addEventListener('click', function(event){
-  coords = c.relMouseCoords(event);
-  x = coords.x;
-  y = coords.y - 15;
-  // rect = c.getBoundingClientRect();
-  // x = event.clientX - rect.left;
-  // y = event.clientY - rect.top;
+  // coords = c.relMouseCoords(event);
+  // x = coords.x;
+  // y = coords.y;
+  rect = c.getBoundingClientRect();
+  x = event.clientX - rect.left;
+  y = event.clientY - rect.top;
   console.log(x, y);
   ctx.beginPath();
   ctx.arc(x, y, 25, 0, 2 * Math.PI, false);
